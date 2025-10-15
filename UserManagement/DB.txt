@@ -1,0 +1,18 @@
+﻿create table tblEmployeeInfo
+(
+	employeeInfoId int not null identity(1,1) primary key,
+	employeeId int not null,
+	fatherName nvarchar(100) not null,
+	dob DateTime not null,
+	department nvarchaR(100) not null,
+	gender bit not null,
+	salary decimal not null,
+	employeeStatus nvarchar(100) 
+)
+
+CREATE TABLE [dbo].[tblUsers](
+	[userId] [int] IDENTITY(1,1) NOT NULL Primary Key,
+	[userName] [nvarchar](100) NOT NULL,
+	[emailAddress] [nvarchar](100) NOT NULL,
+	[password] [nvarchar](100) NOT NULL,
+)
